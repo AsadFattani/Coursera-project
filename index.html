@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Asad Imran</h1>
+            <p><i class="fas fa-envelope"></i>  asad.imran.fattani@gmail.com</p>
+            <p><i class="fas fa-phone"></i>  123-456-7890</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <i class="fas fa-user-circle profile-image" style="font-size: 100px;"></i>
+        <h2>Hi, I'm Asad Imran! 👋</h2>
+        <p>I am a full-stack developer with 2 years of experience in both application and presentation layers. I have a strong background in HTML, CSS, and JavaScript, with 3 years of experience in HTML and CSS, and 2 years in JavaScript. I am proficient in React and Node.js, each with 1 year of experience, and have a solid understanding of Python with 4 years of experience. Additionally, I have worked with D3.js for 1 year, creating interactive data visualizations. My diverse skill set allows me to build robust and scalable web applications, and I am passionate about continuously learning and improving my craft.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <img src="images/html-icon.png" alt="HTML Icon">
+            <p>HTML<br>3 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="images/css-icon.png" alt="CSS Icon">
+            <p>CSS<br>3 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="images/javascript-icon.png" alt="JavaScript Icon">
+            <p>JavaScript<br>2 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="images/react-icon.png" alt="React Icon">
+            <p>React<br>1 year experience</p>
+        </div>
+        <div class="skill">
+            <img src="images/nodejs-icon.png" alt="Node.js Icon">
+            <p>Node.js<br>1 year experience</p>
+        </div>
+        <div class="skill">
+            <img src="images/python-icon.png" alt="Python Icon">
+            <p>Python<br>4 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="images/d3js-icon.png" alt="D3.js Icon">
+            <p>D3.js<br>1 year experience</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Weather Dashboard</h3>
+            <p>Developed a weather dashboard using HTML, CSS, and JavaScript. It provides real-time weather updates and forecasts for multiple cities.</p>
+        </div>
+        <div class="project">
+            <h3>Personal Blog</h3>
+            <p>Created a personal blog using HTML, CSS, and JavaScript. The blog features responsive design, dynamic content loading, and a commenting system.</p>
+        </div>
+        <div class="project">
+            <h3>Task Manager</h3>
+            <p>Built a task manager application using React and Node.js. The app allows users to create, update, and delete tasks, with real-time synchronization across devices.</p>
+        </div>
+        <div class="project">
+            <h3>Data Visualization Tool</h3>
+            <p>Developed a data visualization tool using Python and D3.js. The tool visualizes complex datasets with interactive charts and graphs.</p>
+        </div>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div id="recommendation-list">
+            <p>"Asad is an exceptional developer whose expertise and dedication significantly propelled our project forward. His collaborative approach and innovative solutions exceeded all our expectations and requirements."</p>
+            <p>"I highly recommend Asad for any development team. His profound knowledge in web technologies and problem-solving skills made a remarkable impact on our project's success and efficiency."</p>
+            <p>"Working with Asad was a transformative experience. His leadership qualities, combined with his technical proficiency, greatly enhanced our team's dynamics and the quality of our deliverables."</p>
+        </div>
+        <form id="recommendation-form" onsubmit="addRecommendation(event)">
+            <input type="text" id="name" placeholder="Your Name (optional)">
+            <textarea id="new-recommendation" placeholder="Leave a Recommendation" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <button id="scroll-to-top" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </section>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Asad Imran. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="https://github.com" target="_blank">
+                <i class="fab fa-github social-icon"></i>
+            </a>
+            <a href="https://linkedin.com/in" target="_blank">
+                <i class="fab fa-linkedin social-icon"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,306 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4;
+    background-color: #333; /* Dark background */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black header */
+    color: #fff;
+}
+
+.header-left h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #e63946; /* Red */
+}
+
+.header-left p {
+    margin: 2px 0;
+    color: #adb5bd; /* Grey */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e63946; /* Red */
+}
+
+/* Section Titles */
+section h2 {
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e63946; /* Red underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    font-size: 100px; /* Set font size for the icon */
+    border-radius: 50%; /* Make it circular */
+    border: 3px solid #e63946; /* Red border */
+    padding: 10px; /* Add padding to create space around the icon */
+    background-color: #444; /* Match the background color */
+}
+
+#about p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #ddd;
+}
+
+/* Skills Section */
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #555;
+}
+
+.skill {
+    text-align: center;
+    border: 1px solid #adb5bd; /* Grey border */
+    border-radius: 8px;
+    width: 140px;
+    padding: 20px;
+    background-color: #666;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill img {
+    width: auto;
+    height: 4rem; /* Ensure all logos are the same size */
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 20px;
+    margin: 0 auto;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    color: #e63946; /* Red */
+    font-size: 24px;
+}
+
+/* Recommendations Section */
+#recommendations {
+    padding: 40px 20px;
+    margin: 0 auto;
+    background-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#recommendation-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#recommendation-list p {
+    background-color: #666;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ddd;
+    font-style: italic;
+    position: relative; /* Added for name positioning */
+}
+
+.recommendation-name {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: right;
+    font-style: normal; /* Reset italic for name */
+}
+
+#recommendation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#recommendation-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    border: 1px solid #adb5bd; /* Grey border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #444;
+    color: #ddd;
+    height: 150px; /* Increase height */
+}
+
+#recommendation-form input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    border: 1px solid #adb5bd; /* Grey border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #444;
+    color: #ddd;
+    margin-bottom: 15px; /* Add margin to match spacing */
+}
+
+#recommendation-form button {
+    background-color: #e63946; /* Red */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#recommendation-form button:hover {
+    background-color: #d62828; /* Darker red */
+}
+
+#scroll-to-top {
+    background-color: #e63946; /* Red */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Ensure it's a circle */
+    height: 40px; /* Ensure it's a circle */
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex; /* Center the icon */
+    margin: 20px 0 20px auto; /* Align to the right */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scroll-to-top:hover {
+    background-color: #d62828; /* Darker red */
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #000; /* Black footer */
+    color: #fff;
+    padding: 40px 0; /* Increased padding */
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; /* Added padding */
+}
+
+.footer-content p {
+    margin: 0;
+    padding-bottom: 20px; /* Increased padding */
+    color: #adb5bd; /* Grey */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap */
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    color: #e63946; /* Red */
+}
+
+.custom-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e63946; /* Red */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-popup.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+.popup-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-ok-button {
+    background-color: #fff;
+    color: #e63946; /* Red */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 50px; /* Increased width */
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold; /* Make text bold */
+}
+
+.popup-ok-button:hover {
+    background-color: #e63946; /* Red */
+    color: #fff;
+}
