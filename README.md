@@ -65,10 +65,12 @@ This repository is dedicated to my work in the **Coursera Programming Fundamenta
 * once completed
 -->
 
-<!--## D<!--emo-->
+## Demo
 <!--
+
 * to be added
 -->
+https://coursera-project.netlify.app/
 
 ## Table of Contents
 <!-- 
@@ -103,7 +105,7 @@ This repository is dedicated to my work in the **Coursera Programming Fundamenta
 * 
 * Under production or will be updated.
 -->
-## Project Roadmap
+
 - [x] Create first Template 
 - [x] Develop README file
 - [x] Implement HTML/CSS Layouts
